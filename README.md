@@ -16,6 +16,12 @@ This artifact contains the source code of ConvStencil, a novel stencil computing
     - GCC - above 9.4.0. You may also try to use icx or clang.
     - cuDNN - above 8.0
 
+## Getting Code
+The code can be downloaded using git:
+```
+git clone https://github.com/microsoft/ConvStencil.git
+```
+
 ## Compile
 
 Use the following commands:
