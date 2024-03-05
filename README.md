@@ -3,11 +3,11 @@
 > ConvStencil: Transform Stencil Computation to Matrix Multiplication on Tensor Cores
 
 ## Abstract
---------
+
 This artifact contains the source code of ConvStencil, a novel stencil computing system to transform stencil computation to matrix multiplication on Tensor Cores efficiently.
 
 ## Prerequisites
---------
+
 - Hardware
     - x86-64 CPU
     - a single NVIDIA A100 GPU
@@ -17,7 +17,7 @@ This artifact contains the source code of ConvStencil, a novel stencil computing
     - cuDNN - above 8.0
 
 ## Compile
---------
+
 Use the following commands:
 ```
 mkdir -p build
@@ -27,7 +27,7 @@ make all -j24
 ```
 
 ## Usage
---------
+
 You can run `convstencil` in the following input format.
 ```
 convstencil_program shape input_size time_interation_size options
@@ -44,11 +44,11 @@ convstencil_program shape input_size time_interation_size options
     - `--custom` inputs the custom stencil kernel weights.
 
 ## Contact
---------
+
 If you have any questions, please send an email to the author at kunli@microsoft.com.
 
 Reference
---------
+
 
 Yuetao Chen, Kun Li, Yuhao Wang, Donglin Bai, Lei Wang, Lingxiao Ma, Liang Yuan, Yunquan Zhang, Ting Cao, Mao Yang. [ConvStencil: Transform Stencil Computation to Matrix Multiplication on Tensor Cores](https://doi.org/10.1145/3627535.3638476). In *ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (PPoPP)*, pp. 333–347, 2024.   
 
@@ -70,7 +70,7 @@ series = {PPoPP '24}
 ```
 
 ## Contributing
---------
+
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
@@ -84,7 +84,7 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ## Trademarks
---------
+
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
 trademarks or logos is subject to and must follow 
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
