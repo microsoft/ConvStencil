@@ -480,12 +480,12 @@ void gpu_box_2d1r_breakdown4(const double * __restrict__ in, double * __restrict
             if ((j + 1) % 8 != 0 && j < D_BLOCK_SIZE_COL - 2 * HALO - 1) {
                 lookup_table1_h[i][j] = IDX(j / (UNIT_LENGTH + 1), UNIT_LENGTH * i + j % (UNIT_LENGTH + 1), SM_SIZE_COL);
             } else {
-                lookup_table1_h[i][j] = SM_SIZE_ROW * SM_SIZE_COL - 1;
+                lookup_table1_h[i][j] = - 1;
             }
             if ((j + 2) % 8 != 0 && j > 2 * HALO) {
                 lookup_table2_h[i][j] = IDX((j - UNIT_LENGTH) / (UNIT_LENGTH + 1), UNIT_LENGTH * i + (j - UNIT_LENGTH) % (UNIT_LENGTH + 1), SM_SIZE_COL);
             } else {
-                lookup_table2_h[i][j] = SM_SIZE_ROW * SM_SIZE_COL - 1;
+                lookup_table2_h[i][j] = - 1;
             }
         }
     }
